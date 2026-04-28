@@ -22,7 +22,46 @@ button{background:linear-gradient(135deg,#8f7bff,#66e5ff);color:#050711;cursor:p
 .cta h2{margin:0 0 10px;font-size:28px;letter-spacing:-.03em}.cta p{margin:0 0 20px;color:#aab1c8;font-size:16px}
 .cta a{display:inline-block;padding:14px 28px;border-radius:14px;font-weight:900;font-size:16px;text-decoration:none;color:#050711;background:linear-gradient(135deg,#8f7bff,#66e5ff);box-shadow:0 10px 30px rgba(143,123,255,.4)}
 @media(max-width:720px){.wrap{padding:10px}.shell{padding:14px}h1{font-size:32px}.controls,.summary{grid-template-columns:1fr}.toolbar{display:block}.bar{display:grid;grid-template-columns:repeat(3,1fr);border-radius:18px;margin-bottom:10px}.fretboard{width:880px}.positions{grid-template-columns:1fr}.cta{padding:24px 14px}.cta h2{font-size:24px}.cta a{width:100%;max-width:360px}}
-</style></head><body>
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.wrap,
+.shell,
+.neck-card,
+.cta {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.neck-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.fretboard {
+  width: 760px;
+  min-width: 760px;
+}
+
+@media(max-width:720px){
+  .fretboard {
+    width: 760px;
+    min-width: 760px;
+  }
+
+  .neck-card {
+    padding: 12px;
+  }
+
+  .cta a {
+    max-width: 100%;
+    white-space: normal;
+  }
+}</style></head><body>
 <div class="wrap"><div class="shell">
 <img class="logo" src="https://s3.us-east-1.amazonaws.com/contents.newzenler.com/73037/library/eb-anner699c1c8593a30_lg.png">
 <h1>Premium Scale Finder</h1><p class="sub">Visualise scales across the fretboard with intervals, notes, degrees, positions, and connected neck patterns.</p>
