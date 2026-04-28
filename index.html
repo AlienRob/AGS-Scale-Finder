@@ -15,16 +15,16 @@ body{background:radial-gradient(circle at 15% 0%,rgba(143,123,255,.24),transpare
 select,button,input{height:52px;border-radius:14px;background:#11172c;color:#fff;border:1px solid rgba(255,255,255,.15);padding:0 14px;font-weight:800;font-size:15px;min-width:0}select option,select optgroup{background:#0b1020;color:#fff}button{background:linear-gradient(135deg,#8f7bff,#66e5ff);color:#050711;cursor:pointer;border:0}
 .summary{display:grid;grid-template-columns:170px 1fr 1fr;gap:14px}.pill{background:rgba(255,255,255,.05);border-radius:18px;padding:16px;border:1px solid rgba(255,255,255,.08)}.label{display:block;color:#737b98;font-size:12px;letter-spacing:.1em;font-weight:900;text-transform:uppercase;margin-bottom:6px}.value{font-size:18px;font-weight:900;line-height:1.35}
 .toolbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:18px 0}.bar{display:flex;gap:8px;background:rgba(255,255,255,.06);padding:6px;border-radius:999px;border:1px solid rgba(255,255,255,.08)}.mini{height:38px;border-radius:999px;background:transparent;color:#aab1c8;border:0;padding:0 14px}.mini.active{background:#66e5ff;color:#050711}
-.interval-focus{margin:18px 0;padding:16px;border-radius:20px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}.interval-focus h3{margin:0 0 6px;font-size:18px;letter-spacing:-.02em}.interval-focus p{margin:0 0 12px;color:#aab1c8;font-size:13px;line-height:1.4}.interval-search{display:grid;grid-template-columns:1fr 120px;gap:8px;margin:12px 0}.interval-search input{height:42px;border-radius:14px;background:#11172c;color:#fff;border:1px solid rgba(255,255,255,.15);padding:0 14px;font-weight:800;font-size:14px}.interval-search button{height:42px;border-radius:14px;font-size:13px}
+.audio-panel{margin:18px 0;padding:16px;border-radius:20px;background:rgba(102,229,255,.055);border:1px solid rgba(102,229,255,.16)}.audio-panel h3{margin:0 0 6px;font-size:18px;letter-spacing:-.02em}.audio-panel p{margin:0 0 12px;color:#aab1c8;font-size:13px;line-height:1.4}.audio-row{display:flex;gap:8px;flex-wrap:wrap}.audio-btn{height:40px;border-radius:999px;font-size:12px;font-weight:900;padding:0 14px}.audio-btn.stop{background:rgba(255,49,49,.9);color:#fff}.interval-focus{margin:18px 0;padding:16px;border-radius:20px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}.interval-focus h3{margin:0 0 6px;font-size:18px;letter-spacing:-.02em}.interval-focus p{margin:0 0 12px;color:#aab1c8;font-size:13px;line-height:1.4}.interval-search{display:grid;grid-template-columns:1fr 120px;gap:8px;margin:12px 0}.interval-search input{height:42px;border-radius:14px;background:#11172c;color:#fff;border:1px solid rgba(255,255,255,.15);padding:0 14px;font-weight:800;font-size:14px}.interval-search button{height:42px;border-radius:14px;font-size:13px}
 .focus-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.focus-row:last-child{margin-bottom:0}.focus-btn{height:36px;width:auto;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.06);color:#aab1c8;border:1px solid rgba(255,255,255,.08);font-size:12px;font-weight:900;cursor:pointer}.focus-btn.active{background:linear-gradient(135deg,#8f7bff,#66e5ff);color:#050711;border:0}.focus-note{margin-top:10px;color:#aab1c8;font-size:13px;line-height:1.45}.focus-note strong{color:#fff}
 #title{margin:18px 0 4px;font-size:24px}.hint{color:#aab1c8;margin:0 0 14px}.mobile-hint{display:none;color:#aab1c8;text-align:center;font-size:13px;margin:0 0 12px}
 .neck-card{background:linear-gradient(180deg,rgba(18,22,42,.96),rgba(10,13,28,.98));border:1px solid rgba(143,123,255,.28);border-radius:24px;padding:18px;margin-top:10px;max-width:100%;overflow:hidden}.neck-scroll{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:10px}.fretboard{position:relative;width:1100px;min-width:1100px;height:270px;display:block;user-select:none}
 .string{position:absolute;left:48px;right:30px;height:2px;background:rgba(245,247,255,.72);transform:translateY(-50%);border-radius:999px}.s0{height:4px}.s1{height:3.4px}.s2{height:2.8px}.s3{height:2.3px}.s4{height:1.9px}.s5{height:1.5px}.fret{position:absolute;top:28px;bottom:34px;width:2px;background:rgba(245,247,255,.25)}.nut{width:8px;background:#e7e4d4}.fl{position:absolute;top:235px;color:#b7bfdc;font-size:12px;font-weight:900;transform:translateX(-50%)}.sl{position:absolute;left:12px;color:#d9ddf5;font-size:12px;font-weight:900;transform:translateY(-50%)}
-.dot{position:absolute;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:950;color:#fff;transform:translate(-50%,-50%);background:var(--note);filter:drop-shadow(0 0 8px rgba(143,123,255,.38));transition:opacity .18s ease, transform .18s ease, filter .18s ease}.dot.dim{opacity:.18;filter:none}.dot.focused{transform:translate(-50%,-50%) scale(1.08);filter:drop-shadow(0 0 5px rgba(102,229,255,.28))}.root{background:var(--root);filter:drop-shadow(0 0 10px rgba(255,49,49,.45))}
-.positions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pos{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px}.pos h3{margin:0 0 8px}.pos p{margin:0 0 10px;color:#aab1c8}.mini-neck{height:210px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border-radius:14px}.mini-board{position:relative;width:520px;min-width:520px;height:180px}
+.dot{position:absolute;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:950;color:#fff;transform:translate(-50%,-50%);background:var(--note);filter:drop-shadow(0 0 8px rgba(143,123,255,.38));transition:opacity .18s ease, transform .18s ease, filter .18s ease}.dot.dim{opacity:.18;filter:none}.dot.focused{transform:translate(-50%,-50%) scale(1.08);filter:drop-shadow(0 0 5px rgba(102,229,255,.28))}.dot.playing{transform:translate(-50%,-50%) scale(1.22);box-shadow:0 0 0 4px rgba(102,229,255,.28),0 0 18px rgba(102,229,255,.58);z-index:20}.root{background:var(--root);filter:drop-shadow(0 0 10px rgba(255,49,49,.45))}
+.position-picker{margin:0 0 14px;display:grid;grid-template-columns:1fr 180px;gap:10px;align-items:center}.position-picker label{color:#aab1c8;font-size:13px;font-weight:900}.position-picker select{height:42px;border-radius:14px}.positions{display:grid;grid-template-columns:1fr;gap:18px}.pos{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:14px}.pos h3{margin:0 0 8px}.pos p{margin:0 0 10px;color:#aab1c8}.pos-play{height:36px;border-radius:999px;font-size:12px;font-weight:900;margin:0 0 10px;padding:0 12px}.mini-neck{height:210px;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border-radius:14px}.mini-board{position:relative;width:520px;min-width:520px;height:180px}
 .chord-section{margin-top:26px;padding:20px;border-radius:22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08)}.chord-section h2{margin:0 0 8px;font-size:24px}.chord-section p{color:#aab1c8;margin:0 0 16px;line-height:1.5}.chord-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.chord-card{background:rgba(143,123,255,.08);border:1px solid rgba(143,123,255,.22);border-radius:16px;padding:14px}.chord-card strong{display:block;font-size:18px;margin-bottom:4px;color:#fff}.chord-card span{display:block;color:#aab1c8;font-size:13px;line-height:1.4}
 .cta{margin-top:36px;padding:32px 20px;border-radius:24px;background:linear-gradient(135deg,#0b1020,#11172c);border:1px solid rgba(143,123,255,.3);text-align:center}.cta h2{margin:0 0 10px;font-size:28px;letter-spacing:-.03em}.cta p{margin:0 0 20px;color:#aab1c8;font-size:16px}.cta a{display:inline-block;padding:14px 28px;border-radius:14px;font-weight:900;font-size:16px;text-decoration:none;color:#050711;background:linear-gradient(135deg,#8f7bff,#66e5ff);box-shadow:0 10px 30px rgba(143,123,255,.4)}
-@media(max-width:720px){.wrap{padding:10px}.shell{padding:14px;border-radius:22px}.logo{margin-bottom:14px}h1{font-size:32px}.sub{font-size:15px}.controls,.summary{grid-template-columns:1fr}.controls{gap:10px;padding:12px}.toolbar{display:block}.bar{display:grid;grid-template-columns:repeat(2,1fr);border-radius:18px;margin-bottom:10px}.mini{padding:0 6px;font-size:12px}.interval-search{grid-template-columns:1fr}.focus-row{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.focus-btn{padding:0 6px;font-size:11px}.mobile-hint{display:block}.neck-card{padding:12px}.fretboard{width:760px;min-width:760px;height:230px}.positions{grid-template-columns:1fr}.chord-grid{grid-template-columns:1fr 1fr}.cta{padding:24px 14px}.cta h2{font-size:24px}.cta a{width:100%;max-width:360px;white-space:normal}}
+@media(max-width:720px){.position-picker{grid-template-columns:1fr}.wrap{padding:10px}.shell{padding:14px;border-radius:22px}.logo{margin-bottom:14px}h1{font-size:32px}.sub{font-size:15px}.controls,.summary{grid-template-columns:1fr}.controls{gap:10px;padding:12px}.toolbar{display:block}.bar{display:grid;grid-template-columns:repeat(2,1fr);border-radius:18px;margin-bottom:10px}.mini{padding:0 6px;font-size:12px}.interval-search{grid-template-columns:1fr}.focus-row{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.focus-btn{padding:0 6px;font-size:11px}.mobile-hint{display:block}.neck-card{padding:12px}.fretboard{width:760px;min-width:760px;height:230px}.positions{grid-template-columns:1fr}.chord-grid{grid-template-columns:1fr 1fr}.cta{padding:24px 14px}.cta h2{font-size:24px}.cta a{width:100%;max-width:360px;white-space:normal}}
 </style>
 </head>
 <body>
@@ -34,7 +34,8 @@ select,button,input{height:52px;border-radius:14px;background:#11172c;color:#fff
 <p class="sub">Visualise scales across the fretboard with tonic-based intervals, notes, degrees, compatible chords, and 3NPS position maps.</p>
 <div class="controls"><select id="root"></select><select id="scale"></select><button id="find">Find Scale</button></div>
 <div class="summary"><div class="pill"><span class="label">Scale</span><span id="name" class="value"></span></div><div class="pill"><span class="label">Formula</span><span id="formula" class="value"></span></div><div class="pill"><span class="label">Notes</span><span id="notes" class="value"></span></div></div>
-<div class="toolbar"><div class="bar"><button class="mini active" data-view="intervals">Intervals</button><button class="mini" data-view="notes">Notes</button><button class="mini" data-view="degrees">Degrees</button></div><div class="bar"><button class="mini active" data-mode="full">Full Neck</button><button class="mini" data-mode="positions">Positions</button><button class="mini" data-mode="roots">Roots Only</button><button class="mini" data-mode="3nps6">3NPS 6th String</button><button class="mini" data-mode="3nps5">3NPS 5th String</button></div></div>
+<div class="toolbar"><div class="bar"><button class="mini active" data-view="intervals">Intervals</button><button class="mini" data-view="notes">Notes</button><button class="mini" data-view="degrees">Degrees</button></div><div class="bar"><button class="mini" data-mode="full">Full Neck</button><button class="mini active" data-mode="positions">Positions</button><button class="mini" data-mode="roots">Roots Only</button><button class="mini" data-mode="3nps6">3NPS 6th String</button><button class="mini" data-mode="3nps5">3NPS 5th String</button></div></div>
+<section class="audio-panel"><h3>Scale Audio</h3><p>Hear the selected scale, the current 3NPS position, or the interval focus against the tonic/root.</p><div class="audio-row"><button class="audio-btn" id="playScaleUp">▶ Scale Up</button><button class="audio-btn" id="playScaleUpDown">↕ Up & Down</button><button class="audio-btn" id="playPosition">▶ Current Position</button><button class="audio-btn" id="playFocusTone">🎯 Focus Tone</button><button class="audio-btn stop" id="stopAudio">Stop</button></div></section>
 <section class="interval-focus"><h3>Interval Focus</h3><p>Search or isolate one interval. The tonic/root always stays visible so you can clearly see the interval relationship across the fretboard.</p><div class="interval-search"><input id="intervalSearch" type="text" placeholder="Search interval: ♭3, ♯4, 5, root"><button id="intervalSearchBtn">Search</button></div><div class="focus-row"><button class="focus-btn active" data-focus="all">All</button><button class="focus-btn" data-focus="roots">Roots</button><button class="focus-btn" data-focus="thirds">3rds</button><button class="focus-btn" data-focus="fifths">5ths</button><button class="focus-btn" data-focus="sevenths">7ths</button><button class="focus-btn" data-focus="colour">Colour Tones</button></div><div class="focus-row"><button class="focus-btn" data-focus="1">1</button><button class="focus-btn" data-focus="b2">♭2</button><button class="focus-btn" data-focus="2">2</button><button class="focus-btn" data-focus="b3">♭3</button><button class="focus-btn" data-focus="3">3</button><button class="focus-btn" data-focus="4">4</button><button class="focus-btn" data-focus="b5,#4">♭5/♯4</button><button class="focus-btn" data-focus="5">5</button><button class="focus-btn" data-focus="b6,#5">♭6/♯5</button><button class="focus-btn" data-focus="6">6</button><button class="focus-btn" data-focus="b7">♭7</button><button class="focus-btn" data-focus="7">7</button></div><div id="focusNote" class="focus-note"><strong>All intervals:</strong> showing the complete scale map.</div></section>
 <h2 id="title"></h2><p class="hint">High E on top, low E on bottom. Open-string notes sit before the nut. Swipe sideways on mobile.</p><p class="mobile-hint">Swipe left/right inside the fretboard box.</p><div id="display"></div>
 <section class="chord-section"><h2>Compatible Chords</h2><p id="chordIntro"></p><div id="chordGrid" class="chord-grid"></div></section>
@@ -60,7 +61,8 @@ const SC={
 "Harmonic Minor":{f:["1","2","b3","4","5","b6","7"],s:[0,2,3,5,7,8,11],chordType:"harmonicMinor"},
 "Melodic Minor":{f:["1","2","b3","4","5","6","7"],s:[0,2,3,5,7,9,11],chordType:"melodicMinor"}
 };
-let view="intervals",mode="full",focus="all",cur;
+let view="intervals",mode="positions",focus="all",cur;
+let selectedPositionStart=0;
 const $=id=>document.getElementById(id);
 function mod(x){return((x%12)+12)%12}
 function rootValue(x){return N.indexOf(x.split(" ")[0])}
@@ -69,6 +71,8 @@ function prettyNote(pc){const n=noteName(pc);return FLATS[n]?n+" / "+FLATS[n]:n}
 function prettyInterval(x){return x.replaceAll("b","♭").replaceAll("#","♯")}
 function normaliseIntervalSearch(x){return x.trim().toLowerCase().replaceAll("♭","b").replaceAll("♯","#").replaceAll("flat","b").replaceAll("sharp","#").replaceAll("root","1").replaceAll(" ","")}
 function pc(stringIndex,fret){return mod(OPEN[stringIndex]+fret)}
+function midi(stringIndex,fret){return OPEN[stringIndex]+fret}
+function midiToFreq(m){return 440*Math.pow(2,(m-69)/12)}
 function intervalFromTonic(notePc){return mod(notePc-cur.rootv)}
 function init(){root.innerHTML=ROOTS.map(x=>`<option${x==="C"?" selected":""}>${x}</option>`).join("");scale.innerHTML=Object.keys(SC).map(x=>`<option${x==="Major / Ionian"?" selected":""}>${x}</option>`).join("");update()}
 function update(){const r=root.value,scn=scale.value,rootv=rootValue(r),sc=SC[scn];cur={r,scn,rootv,sc};name.textContent=r.split(" ")[0]+" "+scn;formula.textContent=sc.f.map(prettyInterval).join(" – ");notes.textContent=sc.s.map(x=>prettyNote(rootv+x)).join(" – ");title.textContent=r.split(" ")[0]+" "+scn+" across the neck";render();renderChords()}
@@ -77,17 +81,204 @@ function lab(t){if(view==="notes")return t.n;if(view==="degrees")return t.deg;re
 function focusMatch(t){if(focus==="all")return true;if(focus==="roots")return t.root;if(focus==="thirds")return["b3","3"].includes(t.int);if(focus==="fifths")return["b5","5","#5"].includes(t.int);if(focus==="sevenths")return["b7","7"].includes(t.int);if(focus==="colour")return!["1","b3","3","5"].includes(t.int);return focus.split(",").includes(t.int)}
 function focusCopy(){const text={all:["All intervals","showing the complete scale map."],roots:["Roots","the anchor points. Use these to connect positions and resolve phrases."],thirds:["3rds","the notes that define major or minor colour."],fifths:["5ths","stable chord tones that reinforce the harmony."],sevenths:["7ths","the tones that create tension, pull, and harmonic identity."],colour:["Colour tones","the notes that add flavour beyond the basic chord tones."],"1":["1 / Root","the home note of the scale."],"b2":["♭2","a dark, tense Phrygian-style colour."],"2":["2 / 9","an open melodic colour used heavily in major, minor, and modal sounds."],"b3":["♭3","the minor colour. Essential for minor pentatonic, blues, Dorian, and Aeolian."],"3":["3","the major colour. Strong, bright, and harmonically defining."],"4":["4 / 11","a suspended colour that wants to move or float."],"b5,#4":["♭5 / ♯4","the tritone colour. Bluesy, Lydian, altered, or diminished depending on context."],"5":["5","stable and powerful. A core chord tone."],"b6,#5":["♭6 / ♯5","dark, exotic, or augmented depending on the scale."],"6":["6 / 13","a sweet colour tone. Key for Dorian, major, and 13th sounds."],"b7":["♭7","dominant, blues, modal, and rock colour."],"7":["7","major seventh colour. Smooth, bright, and unresolved."]}[focus]||[prettyInterval(focus),"highlighted interval."];focusNote.innerHTML=`<strong>${text[0]}:</strong> ${text[1]}`}
 function render(){if(mode==="positions")renderPositions();else if(mode==="roots")renderFull(true);else if(mode==="3nps6")render3NPS(0);else if(mode==="3nps5")render3NPS(1);else renderFull(false)}
+let audioCtx=null,activeOsc=[];
+function getAudio(){if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();return audioCtx}
+function stopAllAudio(){activeOsc.forEach(o=>{try{o.stop()}catch(e){}});activeOsc=[];clearPlaying()}
+function clearPlaying(){
+  document.querySelectorAll('.dot.playing').forEach(d=>d.classList.remove('playing'));
+}
+
+function playMidiSequence(notes,step=.34,dur=.28){
+  stopAllAudio();
+  clearPlaying();
+
+  // Remove duplicate MIDI pitches so the same frequency never plays twice.
+  const unique=[];
+  const seen=new Set();
+
+  notes.forEach(item=>{
+    const m=typeof item==='number'?item:item.midi;
+    if(!seen.has(m)){
+      seen.add(m);
+      unique.push(item);
+    }
+  });
+
+  const ctx=getAudio();
+  const now=ctx.currentTime+.04;
+
+  unique.forEach((item,i)=>{
+    const m=typeof item==='number'?item:item.midi;
+    const key=typeof item==='number'?null:item.key;
+
+    const osc=ctx.createOscillator();
+    const gain=ctx.createGain();
+
+    osc.type='triangle';
+    osc.frequency.value=midiToFreq(m);
+
+    gain.gain.setValueAtTime(0,now+i*step);
+    gain.gain.linearRampToValueAtTime(.22,now+i*step+.025);
+    gain.gain.exponentialRampToValueAtTime(.001,now+i*step+dur);
+
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+
+    osc.start(now+i*step);
+    osc.stop(now+i*step+dur+.04);
+
+    activeOsc.push(osc);
+
+    if(key){
+      setTimeout(()=>{
+        clearPlaying();
+        document.querySelectorAll('[data-note-key="'+key+'"]').forEach(d=>d.classList.add('playing'));
+      },i*step*1000);
+
+      setTimeout(()=>{
+        document.querySelectorAll('[data-note-key="'+key+'"]').forEach(d=>d.classList.remove('playing'));
+      },(i*step+dur)*1000);
+    }
+  });
+
+  setTimeout(clearPlaying,(unique.length*step+dur)*1000);
+}
+
+function rootMidiNearMiddle(){
+  let f=nearestRootFret(0);
+  let m=OPEN[0]+f;
+  while(m<48)m+=12;
+  while(m>60)m-=12;
+  return m;
+}
+
+function scaleMidiUp(){
+  const r=rootMidiNearMiddle();
+  return cur.sc.s.map(x=>r+x).concat([r+12]);
+}
+
+function currentPositionMidis(){
+  let start=mode==='3nps5'?1:0;
+  let rootFret=nearestRootFret(start);
+  let startMidi=OPEN[start]+rootFret;
+  let out=[];
+  let lastMidi=startMidi-1;
+
+  for(let st=start;st<6;st++){
+    for(let n=0;n<3;n++){
+      const target=nextScaleMidiAfter(lastMidi,OPEN[st]);
+      if(target===null)continue;
+      const fret=target-OPEN[st];
+      if(fret>=0&&fret<=24){
+        let t=tone(fret,st);
+        out.push({midi:midi(st,fret),key:st+'-'+fret,root:t&&t.root});
+        lastMidi=target;
+      }
+    }
+  }
+
+  out=out.sort((a,b)=>a.midi-b.midi);
+  const roots=out.filter(n=>n.root);
+
+  if(roots.length>=2){
+    const first=roots[0].midi;
+    const last=roots[roots.length-1].midi;
+    return out.filter(n=>n.midi>=first&&n.midi<=last);
+  }
+
+  return out;
+}
+
+function positionMidisFromFrets(start,end){
+  let out=[];
+
+  for(let st=0;st<6;st++){
+    for(let fr=start;fr<=end;fr++){
+      let t=tone(fr,st);
+      if(t)out.push({midi:midi(st,fr),key:st+'-'+fr,root:t.root});
+    }
+  }
+
+  out=out.sort((a,b)=>a.midi-b.midi);
+  const roots=out.filter(n=>n.root);
+
+  if(roots.length>=2){
+    const firstRoot=roots[0].midi;
+    const lastRoot=roots[roots.length-1].midi;
+    return out.filter(n=>n.midi>=firstRoot&&n.midi<=lastRoot);
+  }
+
+  return out;
+}
+
+function focusIntervals(){
+  if(focus==='all')return cur.sc.s;
+  if(focus==='roots')return[0];
+  if(focus==='thirds')return cur.sc.s.filter((_,i)=>['b3','3'].includes(cur.sc.f[i]));
+  if(focus==='fifths')return cur.sc.s.filter((_,i)=>['b5','5','#5'].includes(cur.sc.f[i]));
+  if(focus==='sevenths')return cur.sc.s.filter((_,i)=>['b7','7'].includes(cur.sc.f[i]));
+  if(focus==='colour')return cur.sc.s.filter((_,i)=>!['1','b3','3','5'].includes(cur.sc.f[i]));
+  return cur.sc.s.filter((_,i)=>focus.split(',').includes(cur.sc.f[i]));
+}
+
+function playFocus(){
+  const r=rootMidiNearMiddle();
+  const ints=focusIntervals();
+  let notes=[];
+  ints.forEach(x=>{notes.push(r,r+x)});
+  playMidiSequence(notes,.42,.34);
+}
 function renderFull(rootsOnly){let tones=[];for(let st=0;st<6;st++)for(let fr=0;fr<=15;fr++){let t=tone(fr,st);if(t&&(!rootsOnly||t.root))tones.push(t)}display.innerHTML=`<div class="neck-card"><h3>${rootsOnly?"Root notes only":"Full neck map"}</h3><div class="neck-scroll"><div class="fretboard">${board(0,15,tones)}</div></div></div>`}
-function renderPositions(){const starts=[0,3,5,7,10];display.innerHTML=`<div class="positions">${starts.map((start,i)=>{let tones=[];for(let st=0;st<6;st++)for(let fr=start;fr<=start+4;fr++){let t=tone(fr,st);if(t)tones.push(t)}return`<div class="pos"><h3>Position ${i+1}</h3><p>Frets ${start}-${start+4}</p><div class="mini-neck"><div class="mini-board">${board(start,start+4,tones,true)}</div></div></div>`}).join("")}</div>`}
+function renderPositions(){const starts=[0,3,5,7,10];const start=selectedPositionStart;const posIndex=starts.indexOf(start)+1;let tones=[];for(let st=0;st<6;st++)for(let fr=start;fr<=start+4;fr++){let t=tone(fr,st);if(t)tones.push(t)}display.innerHTML=`<div class="position-picker"><label for="positionSelect">Choose one position at a time</label><select id="positionSelect">${starts.map((s,i)=>`<option value="${s}" ${s===start?"selected":""}>Position ${i+1} — Frets ${s}-${s+4}</option>`).join("")}</select></div><div class="positions"><div class="pos"><h3>Position ${posIndex}</h3><p>Frets ${start}-${start+4}</p><button class="pos-play" data-play-position="${start}">▶ Play Position ${posIndex}</button><div class="mini-neck"><div class="mini-board">${board(start,start+4,tones,true)}</div></div></div></div>`}
 function nearestRootFret(stringIndex){return mod(cur.rootv-OPEN[stringIndex])}
 function scaleIntervalAt(index){const len=cur.sc.s.length;return Math.floor(index/len)*12+cur.sc.s[index%len]}
-function render3NPS(startString){const rootFret=nearestRootFret(startString);let tones=[];let noteIndex=0;for(let st=startString;st<6;st++){for(let n=0;n<3;n++){const absInt=scaleIntervalAt(noteIndex++);const fret=rootFret+absInt-(OPEN[st]-OPEN[startString]);if(fret>=0){const t=tone(fret,st);if(t)tones.push(t)}}}
-const minF=Math.max(0,Math.min(...tones.map(t=>t.fret))-1),maxF=Math.max(...tones.map(t=>t.fret));const label=startString===0?"6th-string root 3NPS position":"5th-string root 3NPS position";display.innerHTML=`<div class="neck-card"><h3>${label}</h3><p class="hint">Root starts as close to the nut as possible: ${prettyNote(cur.rootv).split(" / ")[0]} on the ${startString===0?"low E":"A"} string, fret ${rootFret}.</p><div class="neck-scroll"><div class="fretboard">${board(minF,maxF,tones)}</div></div></div>`}
-function board(start,end,tones,mini=false){const mobile=window.innerWidth<=720,W=mini?520:(mobile?760:1100),H=mini?180:(mobile?230:270),L=mini?36:(mobile?40:48),Rt=mini?20:(mobile?22:30),T=mini?24:28,B=mini?28:34,AW=W-L-Rt,AH=H-T-B,count=end-start+2,y=row=>T+(AH/5)*row,xf=f=>L+((f-start)+.5)*(AW/count),fx=f=>L+(f-start+1)*(AW/count);let h="";const visualToData=[5,4,3,2,1,0];visualToData.forEach((dataString,visualRow)=>{h+=`<div class="string s${dataString}" style="top:${y(visualRow)}px;left:${L}px;right:${Rt}px"></div><div class="sl" style="top:${y(visualRow)}px">${STRINGS[dataString]}</div>`});for(let f=start;f<=end+1;f++){h+=`<div class="fret ${f===0?"nut":""}" style="left:${fx(f)}px"></div>`;if(f<=end)h+=`<div class="fl" style="left:${xf(f)}px">${f}</div>`}tones.forEach(t=>{const match=focusMatch(t);let cls=t.root?"root":"";if(focus!=="all"&&!match&&!t.root)cls+=" dim";if(focus!=="all"&&match&&!t.root)cls+=" focused";const visualRow=5-t.stringIndex;h+=`<div class="dot ${cls}" style="left:${xf(t.fret)}px;top:${y(visualRow)}px">${lab(t)}</div>`});return h}
+function nearestScaleMidiAtOrAbove(targetMidi){let r=rootMidiNearMiddle()-24;let best=null;for(let oct=0;oct<6;oct++){cur.sc.s.forEach(si=>{const m=r+(oct*12)+si;if(m>=targetMidi&&(best===null||m<best))best=m})}return best}
+function nextScaleMidiAfter(prevMidi,minMidi){let r=rootMidiNearMiddle()-24;let best=null;for(let oct=0;oct<7;oct++){cur.sc.s.forEach(si=>{const m=r+(oct*12)+si;if(m>prevMidi&&m>=minMidi&&(best===null||m<best))best=m})}return best}
+function render3NPS(startString){
+const rootFret=nearestRootFret(startString);
+const startMidi=OPEN[startString]+rootFret;
+let tones=[];
+let lastMidi=startMidi-1;
+let rootCount=0;
+for(let st=startString;st<6;st++){
+  let minMidi=OPEN[st];
+  for(let n=0;n<3;n++){
+    const target=nextScaleMidiAfter(lastMidi,minMidi);
+    if(target===null)continue;
+    const fret=target-OPEN[st];
+    if(fret>=0&&fret<=24){
+      const t=tone(fret,st);
+      if(t){
+        tones.push(t);
+        lastMidi=target;
+        if(t.root)rootCount++;
+      }
+    }
+  }
+}
+const rootTones=tones.filter(t=>t.root).sort((a,b)=>midi(a.stringIndex,a.fret)-midi(b.stringIndex,b.fret));
+if(rootTones.length>=2){
+  const first=midi(rootTones[0].stringIndex,rootTones[0].fret);
+  const last=midi(rootTones[rootTones.length-1].stringIndex,rootTones[rootTones.length-1].fret);
+  tones=tones.filter(t=>{const m=midi(t.stringIndex,t.fret);return m>=first&&m<=last});
+}
+const minF=Math.max(0,Math.min(...tones.map(t=>t.fret))-1),maxF=Math.max(...tones.map(t=>t.fret));
+const label=startString===0?"6th-string root 3NPS position":"5th-string root 3NPS position";
+display.innerHTML=`<div class="neck-card"><h3>${label}</h3><p class="hint">Starts on the tonic/root and resolves to the next tonic where possible. Three sequential scale notes per string, with no repeated pitch/frequency.</p><div class="neck-scroll"><div class="fretboard">${board(minF,maxF,tones)}</div></div></div>`
+}
+function board(start,end,tones,mini=false){const mobile=window.innerWidth<=720,W=mini?520:(mobile?760:1100),H=mini?180:(mobile?230:270),L=mini?36:(mobile?40:48),Rt=mini?20:(mobile?22:30),T=mini?24:28,B=mini?28:34,AW=W-L-Rt,AH=H-T-B,count=end-start+2,y=row=>T+(AH/5)*row,xf=f=>L+((f-start)+.5)*(AW/count),fx=f=>L+(f-start+1)*(AW/count);let h="";const visualToData=[5,4,3,2,1,0];visualToData.forEach((dataString,visualRow)=>{h+=`<div class="string s${dataString}" style="top:${y(visualRow)}px;left:${L}px;right:${Rt}px"></div><div class="sl" style="top:${y(visualRow)}px">${STRINGS[dataString]}</div>`});for(let f=start;f<=end+1;f++){h+=`<div class="fret ${f===0?"nut":""}" style="left:${fx(f)}px"></div>`;if(f<=end)h+=`<div class="fl" style="left:${xf(f)}px">${f}</div>`}tones.forEach(t=>{const match=focusMatch(t);let cls=t.root?"root":"";if(focus!=="all"&&!match&&!t.root)cls+=" dim";if(focus!=="all"&&match&&!t.root)cls+=" focused";const visualRow=5-t.stringIndex;h+=`<div class="dot ${cls}" data-note-key="${t.stringIndex}-${t.fret}" style="left:${xf(t.fret)}px;top:${y(visualRow)}px">${lab(t)}</div>`});return h}
 function chordName(pc,suffix){return prettyNote(pc).split(" / ")[0]+suffix}
 function renderChords(){const root=cur.rootv,type=cur.sc.chordType;let chords=[];if(type==="major"){[["I","maj7",0],["ii","m7",2],["iii","m7",4],["IV","maj7",5],["V","7",7],["vi","m7",9],["vii","m7♭5",11]].forEach(d=>chords.push({degree:d[0],name:chordName(root+d[2],d[1]),info:"Diatonic chord from this major scale."}))}else if(type==="minor"){[["i","m7",0],["ii","m7♭5",2],["III","maj7",3],["iv","m7",5],["v","m7",7],["VI","maj7",8],["VII","7",10]].forEach(d=>chords.push({degree:d[0],name:chordName(root+d[2],d[1]),info:"Diatonic chord from this natural minor scale."}))}else if(type==="dorian"){chords=[{degree:"i",name:chordName(root,"m7"),info:"Home chord for Dorian."},{degree:"IV",name:chordName(root+5,"7"),info:"Strong Dorian companion chord."},{degree:"♭VII",name:chordName(root+10,"maj7"),info:"Modal colour chord."},{degree:"ii",name:chordName(root+2,"m7"),info:"Connected minor colour."}]}else if(type==="mixolydian"){chords=[{degree:"I",name:chordName(root,"7"),info:"Home dominant chord."},{degree:"♭VII",name:chordName(root+10,"maj7"),info:"Classic Mixolydian rock sound."},{degree:"v",name:chordName(root+7,"m7"),info:"Modal companion chord."},{degree:"IV",name:chordName(root+5,"maj7"),info:"Stable major colour."}]}else if(type==="lydian"){chords=[{degree:"I",name:chordName(root,"maj7♯11"),info:"Home Lydian chord."},{degree:"II",name:chordName(root+2,"7"),info:"Bright Lydian movement."},{degree:"vii",name:chordName(root+11,"m7"),info:"Smooth upper colour."},{degree:"V",name:chordName(root+7,"maj7"),info:"Open major colour."}]}else if(type==="phrygian"){chords=[{degree:"i",name:chordName(root,"m7"),info:"Home Phrygian chord."},{degree:"♭II",name:chordName(root+1,"maj7"),info:"Signature Phrygian colour."},{degree:"♭VII",name:chordName(root+10,"m7"),info:"Dark modal movement."},{degree:"♭vi",name:chordName(root+8,"maj7"),info:"Heavy minor colour."}]}else if(type==="locrian"){chords=[{degree:"i",name:chordName(root,"m7♭5"),info:"Home Locrian chord."},{degree:"♭II",name:chordName(root+1,"maj7"),info:"Tense resolution colour."},{degree:"♭v",name:chordName(root+6,"maj7"),info:"Unstable modal colour."},{degree:"♭VII",name:chordName(root+10,"m7"),info:"Dark minor movement."}]}else if(type==="pentatonicMajor"){chords=[{degree:"I",name:chordName(root,"maj"),info:"Primary major sound."},{degree:"I6",name:chordName(root,"6"),info:"Sweet major pentatonic colour."},{degree:"Iadd9",name:chordName(root,"add9"),info:"Open melodic sound."},{degree:"vi",name:chordName(root+9,"m7"),info:"Relative minor connection."}]}else if(type==="pentatonicMinor"||type==="blues"){chords=[{degree:"i",name:chordName(root,"m7"),info:"Primary minor pentatonic sound."},{degree:"i",name:chordName(root,"m"),info:"Straight minor sound."},{degree:"I",name:chordName(root,"7"),info:"Blues-dominant home chord."},{degree:"IV",name:chordName(root+5,"7"),info:"Classic blues movement."}]}else if(type==="harmonicMinor"){chords=[{degree:"i",name:chordName(root,"mMaj7"),info:"Signature harmonic minor tonic."},{degree:"V",name:chordName(root+7,"7"),info:"Strong harmonic minor dominant."},{degree:"♭VI",name:chordName(root+8,"maj7"),info:"Dark cinematic colour."},{degree:"vii",name:chordName(root+11,"dim7"),info:"Leading-tone diminished chord."}]}else if(type==="melodicMinor"){chords=[{degree:"i",name:chordName(root,"mMaj7"),info:"Melodic minor tonic colour."},{degree:"ii",name:chordName(root+2,"m7"),info:"Smooth minor movement."},{degree:"IV",name:chordName(root+5,"7"),info:"Jazz melodic minor colour."},{degree:"VI",name:chordName(root+9,"m7♭5"),info:"Altered minor colour."}]}chordIntro.textContent=`These chords are compatible with ${name.textContent}. Use them to connect scale knowledge with harmony.`;chordGrid.innerHTML=chords.map(c=>`<div class="chord-card"><strong>${c.degree} — ${c.name}</strong><span>${c.info}</span></div>`).join("")}
-document.addEventListener("click",e=>{if(e.target.dataset.view){document.querySelectorAll("[data-view]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");view=e.target.dataset.view;render()}if(e.target.dataset.mode){document.querySelectorAll("[data-mode]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");mode=e.target.dataset.mode;render()}if(e.target.dataset.focus){document.querySelectorAll("[data-focus]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");focus=e.target.dataset.focus;focusCopy();render()}});
-intervalSearchBtn.onclick=()=>{const q=normaliseIntervalSearch(intervalSearch.value);if(!q)return;let match=q;if(q==="b5"||q==="#4")match="b5,#4";if(q==="b6"||q==="#5")match="b6,#5";focus=match;document.querySelectorAll("[data-focus]").forEach(b=>b.classList.toggle("active",b.dataset.focus===match));focusCopy();render()};intervalSearch.addEventListener("keydown",e=>{if(e.key==="Enter")intervalSearchBtn.click()});find.onclick=update;root.onchange=update;scale.onchange=update;init();
+document.addEventListener("click",e=>{if(e.target.dataset.view){document.querySelectorAll("[data-view]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");view=e.target.dataset.view;render()}if(e.target.dataset.mode){document.querySelectorAll("[data-mode]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");mode=e.target.dataset.mode;render()}if(e.target.dataset.focus){document.querySelectorAll("[data-focus]").forEach(b=>b.classList.remove("active"));e.target.classList.add("active");focus=e.target.dataset.focus;focusCopy();render()}
+if(e.target.dataset.playPosition){const start=parseInt(e.target.dataset.playPosition,10);playMidiSequence(positionMidisFromFrets(start,start+4))}
+if(e.target.id==="positionSelect"){selectedPositionStart=parseInt(e.target.value,10);render()}
+});
+intervalSearchBtn.onclick=()=>{const q=normaliseIntervalSearch(intervalSearch.value);if(!q)return;let match=q;if(q==="b5"||q==="#4")match="b5,#4";if(q==="b6"||q==="#5")match="b6,#5";focus=match;document.querySelectorAll("[data-focus]").forEach(b=>b.classList.toggle("active",b.dataset.focus===match));focusCopy();render()};intervalSearch.addEventListener("keydown",e=>{if(e.key==="Enter")intervalSearchBtn.click()});playScaleUp.onclick=()=>playMidiSequence(scaleMidiUp());
+playScaleUpDown.onclick=()=>{const up=scaleMidiUp();playMidiSequence(up.concat(up.slice(0,-1).reverse()))};
+playPosition.onclick=()=>playMidiSequence(currentPositionMidis());
+playFocusTone.onclick=()=>playFocus();
+stopAudio.onclick=()=>stopAllAudio();
+find.onclick=update;root.onchange=update;scale.onchange=update;init();
 </script>
 </body>
 </html>
